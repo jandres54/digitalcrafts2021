@@ -10,14 +10,14 @@ while(lengthOfLastName < 1):
     lengthOfLastName = len(lastName)
 print("The user name is %s %s" % (firstName, lastName))
 friendsFirstName = input("What is your friends first name?")
-lengthOfFriendsFirstName = len(friendsFirstName)
-while(lengthOfFriendsFirstName < 1):
+lenOfFriendsFirstName = len(friendsFirstName)
+while(lenOfFriendsFirstName < 1):
     friendsFirstName = input("What is your friends first name?")
-    lengthOfFriendsFirstName = len(friendsFirstName)
+    lenOfFriendsFirstName = len(friendsFirstName)
 friendsLastName = input("What is your friends last name?")
-lengthOfFriendsLastName = len(friendsLastName)
-while(lengthOfFriendsLastName < 1):
+lenOfFriendsLastName = len(friendsLastName)
+while(lenOfFriendsLastName < 1):
     friendsLastName = input("What is your friends last name?")
-    lengthOfFriendsLastName = len(friendsLastName)
+    lenfFriendsLastName = len(friendsLastName)
 print("The friends name is %s %s" % (friendsFirstName, friendsLastName))
 print("")
