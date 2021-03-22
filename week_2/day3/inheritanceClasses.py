@@ -6,3 +6,7 @@ class Currency:
 
 
 yen = Currency("Yen", "Japan", 20)
+print("The value of this currency is ", yen.price)
+# print out actual name price and nation of this currency
+# this currency is a Yen , it is from Japan
+print(f"This currency is {Curency.}")
