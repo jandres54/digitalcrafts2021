@@ -1,0 +1,26 @@
+html {
+  background: url(../homeWork/ba.jpg) no repeat center center fixed;
+}
+
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  height: 40px;
+  overflow: hidden;
+  background-color: gray;
+}
+.navbar a {
+  display: block;
+  text-align: center;
+  float: left;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 650px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
