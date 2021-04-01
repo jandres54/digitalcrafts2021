@@ -3,14 +3,15 @@
   flex-direction: column;
   height: 100vh;
   justify-content: center;
-  background-color: #2758a0;
+  background-image: url(../tips.jpeg);
+  background-size: cover;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #2758a0;
+  background-color: none;
 }
 button {
   padding: 5px;

@@ -46,36 +46,13 @@
         const listItem = document.createElement("li")
         listItem.innerText = tipTotal
         grabList.append(listItem)
-
-        // const yenValue = convertToYen(convertedAmountPaid)
-
     }
-
     const calcBtn = document.querySelector("#calculateBtn")
-    // eventListener ( event, anonymous function)
-    // .eventListener('click',function() {
-    // })
-    function alertMe(){
-        alert("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHH")
-    }
-
-    function changeButtonColor(){
-
-        let color = Math.floor(Math.random() * 16777215).toString(16)
-        // console.log(calcBtn)
-        console.log(color)
-        calcBtn.style.backgroundColor = `#${color}`
-    }
-      // eventListener ( event, anonymous function)
-    // .eventListener('click',function() {
-    // })
+  
     calcBtn.addEventListener('click', function(e){
         tipCalc()
         changeButtonColor()
     })
-
-    // calcBtn.addEventListener('click', tipCalc)
-    
     
 </script>
 </html>
