@@ -7,13 +7,9 @@ const pool = require("./db.js");
 app.use(express.json());
 app.use(cors());
 
-
 app.get("/", (req, res) => {
   res.send("Welcome to node server");
 });
-
-
-
 
 app.listen(port, () => {
     console.log(`listening on port ${port}`);
