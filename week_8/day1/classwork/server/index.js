@@ -13,7 +13,6 @@ app.get("/", (req, res) => {
     res.send("Welcome to node server");
   });
 
-  //create
 app.post("/item1", async (req, res) => {
     try {
     const {description} = req.body
@@ -24,10 +23,8 @@ app.post("/item1", async (req, res) => {
     console.log(req.body)}
     catch(err) {
         console.log(err.message)}
-
   });
 
-//read
   app.get("/list_items", async (req, res) => {
     try {
     const read_items = await pool.query(
@@ -37,7 +34,6 @@ app.post("/item1", async (req, res) => {
         console.log(err.message)}
   });
 
-//update
 app.put("/update_list/:id", async (req, res) => {
     try {
       const { id } = req.params;
@@ -53,7 +49,6 @@ app.put("/update_list/:id", async (req, res) => {
     }
   });
 
-//delete
 app.delete("/delete_Item/:id", async (req, res) => {
     try {
       const { id } = req.params;
@@ -66,8 +61,6 @@ app.delete("/delete_Item/:id", async (req, res) => {
       console.log(err.message);
     }
   });
-
-
 
 app.listen(port, () => {
     console.log(`listening on port ${port}`);
