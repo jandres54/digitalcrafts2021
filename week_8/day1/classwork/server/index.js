@@ -3,15 +3,19 @@ const app = express();
 const cors = require("cors");
 const port = 3004;
 const pool = require("./db.js");
+const es6Renderer = require("express-es6-template-engine");
 
 
 
 app.use(express.json());
 app.use(cors());
+app.engine("html", es6Renderer);
+app.set("views","../template")
+app.set("view engine", "html")
 
 app.get("/", (req, res) => {
-    res.send("Welcome to node server");
-  });
+  res.render("home");
+});
 
 app.post("/item1", async (req, res) => {
     try {
