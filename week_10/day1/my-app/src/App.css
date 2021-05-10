@@ -1,0 +1,36 @@
+.App {
+    height: 800px;
+    width: 700px;
+    background-color: #eed6d3;
+    display: grid;
+    grid-template-areas:
+      "nav nav nav"
+      "sidebar aboutme aboutme"
+      "sidebar aboutme aboutme";
+    grid-template-columns: 150px 1fr 30px;
+    grid-template-rows: 60px 1fr 30px;
+  }
+  
+  /* .Sidebar,
+  .AboutMe,
+  .Nav {
+    height: 100px;
+    width: 100px;
+  } */
+  
+  .Sidebar {
+    background-color: #ffaebc;
+    grid-area: sidebar;
+  }
+  .AboutMe {
+    background-color: #a0e7e5;
+    grid-area: aboutme;
+  }
+  .AboutContainer {
+    background-color: #b4f8c8;
+    grid-area: aboutme;
+  }
+  .Nav {
+    background-color: #fbe7c6;
+    grid-area: nav;
+  }
