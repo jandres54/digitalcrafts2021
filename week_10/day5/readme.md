@@ -1,0 +1,1 @@
+A callback function is a fuction that passes a parameter to another function and calls it back when something happens (when the parameter has been met). 
