@@ -1,5 +1,5 @@
 import "./App.css";
-import CardContainer from "./components/CardContainer.jsx";
+import CardContainer from "./Components/CardContainer.jsx";
 import { data } from "./data/data";
 
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <h1>Car Search Page</h1>
-      <CardContainer pokemonData={data} />
+      <CardContainer carData={data} />
     </div>
   );
 }
