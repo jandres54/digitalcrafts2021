@@ -1,10 +1,12 @@
 import React from 'react'
 
-export default function MoviesCard() {
+export default function MoviesCard(props) {
     return (
         <div>
-            <h1>Movies Card</h1>
-            
+            {props.movieFromCache.Title}
+            {props.movieFromCache.Type}
+            {props.movieFromCache.Year}
+            <img src={props.movieFromCache.Poster} alt="" />
         </div>
     )
 }
