@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
-import MoviesCard from './MoviesCard'
+import React, { useState } from "react";
+import MoviesCard from './MoviesCard';
+import "../App.css";
 
 export default function Movies() {
     const [movies, setMovies] = useState([]);
@@ -17,18 +18,18 @@ export default function Movies() {
     console.log(movies)
     return (
         <div>
-            <div>
+            <div className="movies-card">
                 {movies.map((movieFromCache) => (
                     
                     <MoviesCard  movieFromCache={movieFromCache} setMovies={setMovies}/>
                   ))}
             </div>
-
             
-            <button onClick={getMovies}>Search Movie</button>
+            <div className="searchBox">
+                <button onClick={getMovies}>Search Movie</button>
             <input type="text" name="name" onChange={event =>setSearchText(event.target.value)} />
             
-            
+            </div>
         </div>
     );
 }
