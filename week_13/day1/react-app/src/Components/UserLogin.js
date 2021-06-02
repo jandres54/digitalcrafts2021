@@ -10,8 +10,7 @@ export default function UserLogin() {
   const email = useSelector((state) => state.email);
   return (
     <div>
-      <h1>Hello! Welcome to my App!</h1>
-      <h3>Input your desired UserName and E-mail below!</h3>
+      <h1>Controlled input</h1>
       <form type="submit">
         <input type="text" placeholder="Name"  onChange={(e) => getUserName(dispatch, e.target.value)}/>
         <input type="text" placeholder="Email" onChange={(e) => getEmail(dispatch, e.target.value)}/>
